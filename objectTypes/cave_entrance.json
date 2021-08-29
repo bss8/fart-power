@@ -1,0 +1,14 @@
+{
+	"name": "cave_entrance",
+	"plugin-id": "SVGPicture",
+	"sid": 513232205018524,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		}
+	]
+}

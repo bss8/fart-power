@@ -1,0 +1,55 @@
+{
+	"name": "lightsand_bg_sm",
+	"plugin-id": "Sprite",
+	"sid": 304364439504939,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "wrap",
+			"name": "Wrap",
+			"sid": 614310153394550
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 856,
+						"height": 111,
+						"originX": 0.5,
+						"originY": -1.1711711711711712,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5575754,
+						"collisionPoly": {
+							"points": [
+								0.0011682242990654205,
+								0,
+								0.9988317757009346,
+								0,
+								0.9988317757009346,
+								0.990990990990991,
+								0.0011682242990654205,
+								0.990990990990991
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 801455519322110,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

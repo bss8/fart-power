@@ -1,0 +1,27 @@
+{
+	"name": "eCredits",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CreditsCloseBtn",
+					"sid": 420813900871854
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 840464420413927,
+					"parameters": {
+						"layout": "TitleScreen"
+					}
+				}
+			],
+			"sid": 585923609767080
+		}
+	],
+	"sid": 136419534168687
+}

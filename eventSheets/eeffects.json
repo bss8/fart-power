@@ -1,0 +1,182 @@
+{
+	"name": "eEffects",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Transitions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Begin a screen transition (fade to black)"
+				},
+				{
+					"functionName": "Transition",
+					"functionDescription": "Automatically converted from 'Transition'",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "transitionState",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 905537947460649
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Transition",
+							"sid": 945533329182769
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 587007940996361,
+							"parameters": {
+								"object-to-create": "Transition",
+								"layer": "\"Transition\"",
+								"x": "0",
+								"y": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Transition",
+							"sid": 191263500434386,
+							"parameters": {
+								"width": "684",
+								"height": "420"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Transition",
+							"sid": 547107257392315,
+							"parameters": {
+								"instance-variable": "State",
+								"value": "transitionState"
+							}
+						}
+					],
+					"sid": 662333935557378
+				},
+				{
+					"eventType": "comment",
+					"text": "In"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Transition",
+							"sid": 465257263091018,
+							"parameters": {
+								"instance-variable": "State",
+								"comparison": 0,
+								"value": "\"In\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Transition",
+							"sid": 753077116928545,
+							"parameters": {
+								"opacity": "lerp(Self.Opacity, 0, 0.4 * dt)"
+							}
+						}
+					],
+					"sid": 576027413935246,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 778254946034300
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "Transition",
+									"sid": 363976724039326,
+									"parameters": {
+										"opacity": "100"
+									}
+								}
+							],
+							"sid": 350416848114677
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Out"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Transition",
+							"sid": 252089463481507,
+							"parameters": {
+								"instance-variable": "State",
+								"comparison": 0,
+								"value": "\"Out\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Transition",
+							"sid": 183979704457949,
+							"parameters": {
+								"opacity": "lerp(Self.Opacity, 100, 0.4 * dt)"
+							}
+						}
+					],
+					"sid": 478945418704772,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 880804879439785
+								}
+							],
+							"actions": [
+								{
+									"id": "set-opacity",
+									"objectClass": "Transition",
+									"sid": 614967166113210,
+									"parameters": {
+										"opacity": "0"
+									}
+								}
+							],
+							"sid": 705987437596911
+						}
+					]
+				}
+			],
+			"sid": 742582088945066
+		}
+	],
+	"sid": 763480154491655
+}

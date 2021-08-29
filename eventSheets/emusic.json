@@ -1,0 +1,49 @@
+{
+	"name": "eMusic",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 472235578964954
+				}
+			],
+			"actions": [],
+			"sid": 879000553032186,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 568859958789178,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 0,
+								"second-value": "\"DesertRoom1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 716485181382177,
+							"parameters": {
+								"audio-file": "Bio_UnitMetre_-_03_-_SciFi",
+								"loop": "not-looping",
+								"volume": "-10",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 846547666713192
+				}
+			]
+		}
+	],
+	"sid": 724629803805295
+}

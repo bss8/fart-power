@@ -1,0 +1,303 @@
+{
+	"name": "Sheep_Player",
+	"plugin-id": "Sprite",
+	"sid": 476407986807363,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 745664992455248
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 51,
+						"height": 44,
+						"originX": 0.45098039215686275,
+						"originY": 0.4772727272727273,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5137742,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 44,
+						"originX": 0.45098039215686275,
+						"originY": 0.4772727272727273,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3052827,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 44,
+						"originX": 0.45098039215686275,
+						"originY": 0.4772727272727273,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 839867,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 926503726777085,
+				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 51,
+						"height": 44,
+						"originX": 0.45098039215686275,
+						"originY": 0.4772727272727273,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6223509,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 45,
+						"originX": 0.45098039215686275,
+						"originY": 0.4888888888888889,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3606292,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 44,
+						"originX": 0.45098039215686275,
+						"originY": 0.4772727272727273,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4218608,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 46,
+						"originX": 0.45098039215686275,
+						"originY": 0.4782608695652174,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6233043,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 915658630259008,
+				"name": "SheepWalkRight",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 51,
+						"originX": 0.5172413793103449,
+						"originY": 0.49019607843137253,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3720357,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 50,
+						"originX": 0.5172413793103449,
+						"originY": 0.52,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9399006,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 51,
+						"originX": 0.5172413793103449,
+						"originY": 0.49019607843137253,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2183238,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 50,
+						"originX": 0.5172413793103449,
+						"originY": 0.52,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3498571,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 393662214581528,
+				"name": "SheepWalkAway",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 51,
+						"height": 44,
+						"originX": 0.5490196078431373,
+						"originY": 0.4772727272727273,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2902784,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 45,
+						"originX": 0.5490196078431373,
+						"originY": 0.4888888888888889,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6434349,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 44,
+						"originX": 0.5490196078431373,
+						"originY": 0.4772727272727273,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6427315,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 51,
+						"height": 46,
+						"originX": 0.5490196078431373,
+						"originY": 0.4782608695652174,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9307077,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 287850989756655,
+				"name": "SheepWalkLeft",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 44,
+						"originX": 0.5172413793103449,
+						"originY": 0.38636363636363635,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8528243,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 45,
+						"originX": 0.5172413793103449,
+						"originY": 0.4,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9229490,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 44,
+						"originX": 0.5172413793103449,
+						"originY": 0.38636363636363635,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4035948,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 46,
+						"originX": 0.5172413793103449,
+						"originY": 0.391304347826087,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3768752,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 545598554252142,
+				"name": "SheepWalkTowards",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

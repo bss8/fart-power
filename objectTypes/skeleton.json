@@ -1,0 +1,49 @@
+{
+	"name": "Skeleton",
+	"plugin-id": "Sprite",
+	"sid": 413298384382106,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 152,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1985769,
+						"collisionPoly": {
+							"points": [
+								0.006578947368421052,
+								0.018867924528301886,
+								0.993421052631579,
+								0.018867924528301886,
+								0.993421052631579,
+								0.9811320754716981,
+								0.006578947368421052,
+								0.9811320754716981
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 121826539946347,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

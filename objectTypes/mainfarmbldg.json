@@ -1,0 +1,20 @@
+{
+	"name": "mainFarmBldg",
+	"plugin-id": "SVGPicture",
+	"sid": 662497125414628,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 410409216255712
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		}
+	]
+}

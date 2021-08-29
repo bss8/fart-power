@@ -1,0 +1,29 @@
+{
+	"name": "Spritefonts",
+	"plugin-id": "Spritefont2",
+	"sid": 849523644903261,
+	"instanceVariables": [
+		{
+			"name": "Type",
+			"type": "string",
+			"desc": "",
+			"sid": 942922253444008
+		},
+		{
+			"name": "Index",
+			"type": "number",
+			"desc": "",
+			"sid": 448885143180840
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		}
+	],
+	"members": [
+		"SpriteFont"
+	]
+}

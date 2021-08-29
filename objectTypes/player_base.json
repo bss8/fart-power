@@ -1,0 +1,50 @@
+{
+	"name": "Player_Base",
+	"plugin-id": "Sprite",
+	"sid": 388999362037287,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Bounce",
+			"type": "boolean",
+			"desc": "",
+			"sid": 937867248915598
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 701562515880901
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8600294,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 915470362192718,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

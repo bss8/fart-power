@@ -1,0 +1,49 @@
+{
+	"name": "eOptions",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "FullScreen",
+					"sid": 710790980226985
+				}
+			],
+			"actions": [
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Browser",
+					"sid": 244589703941246,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "auto"
+					}
+				}
+			],
+			"sid": 221945680720296
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CloseBtn",
+					"sid": 854396659199413
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 500612972195862,
+					"parameters": {
+						"layout": "TitleScreen"
+					}
+				}
+			],
+			"sid": 290791265486790
+		}
+	],
+	"sid": 965838820000048
+}

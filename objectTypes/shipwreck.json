@@ -1,0 +1,14 @@
+{
+	"name": "shipwreck",
+	"plugin-id": "SVGPicture",
+	"sid": 180121707814446,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "brightness",
+			"name": "Brightness"
+		}
+	]
+}

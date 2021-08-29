@@ -1,0 +1,57 @@
+{
+	"name": "moneyIcon",
+	"plugin-id": "Sprite",
+	"sid": 938908148711354,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5271046,
+						"collisionPoly": {
+							"points": [
+								0.038461538461538464,
+								0.058823529411764705,
+								0.5,
+								0.058823529411764705,
+								0.8846153846153846,
+								0.11764705882352941,
+								0.9615384615384616,
+								0.5,
+								0.9230769230769231,
+								0.8823529411764706,
+								0.5,
+								0.8823529411764706,
+								0.07692307692307693,
+								0.8235294117647058,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 967996844228488,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

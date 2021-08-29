@@ -1,0 +1,722 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 26000,
+	"name": "FartPower",
+	"runtime": "c3",
+	"useWorker": "worker",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "SVGPicture",
+			"name": "SVG Picture",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Timeline",
+			"name": "Timeline",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "wrap",
+			"name": "Wrap",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "noise",
+			"name": "Noise",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "waterbg",
+			"name": "Water background",
+			"author": "Viktor Korsun",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "brightness",
+			"name": "Brightness",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "replacecolor",
+			"name": "Replace color",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		}
+	],
+	"uniqueId": "wz0b3ls45wi",
+	"objectTypes": {
+		"items": [
+			"countersBg",
+			"Timeline",
+			"SpriteFont",
+			"FadeToBlack",
+			"cave_entrance",
+			"CameraZone",
+			"Array",
+			"Transition",
+			"Boat_Base",
+			"BG_Cave_1",
+			"GenericParticle",
+			"animatedWater",
+			"waterRock",
+			"TiledBackground",
+			"waterLog",
+			"swayingSticks",
+			"shipEntranceCover",
+			"jumpingFish",
+			"jailhouse",
+			"stables",
+			"Sprite6",
+			"Sprite7",
+			"9patch",
+			"Sprite9",
+			"TextInput",
+			"CloseBtn",
+			"CreditsCloseBtn"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Chicken",
+					"Cow",
+					"Llama",
+					"Pig",
+					"Sheep",
+					"Sheep_Player"
+				],
+				"subfolders": [],
+				"name": "LPC Animals"
+			},
+			{
+				"items": [
+					"Clouds",
+					"darkSand",
+					"darkSand_sm",
+					"lightsand_bg",
+					"lightsand_bg_sm",
+					"Sprite2",
+					"FarmMenuBg",
+					"Mountains_bg",
+					"cave_0000_front"
+				],
+				"subfolders": [],
+				"name": "Backgrounds"
+			},
+			{
+				"items": [
+					"Bush",
+					"Cactus",
+					"Lamp",
+					"Skeleton"
+				],
+				"subfolders": [],
+				"name": "Backdrops"
+			},
+			{
+				"items": [
+					"Cursor",
+					"energyIcon",
+					"energyCounter",
+					"Menu",
+					"moneyIcon",
+					"chicken2",
+					"cow2",
+					"pig2",
+					"StaticChickenIcon",
+					"buyChickenBtn",
+					"IntroBtn",
+					"titleScreenFloor",
+					"FarmStoreSign",
+					"moneyCounter",
+					"Sprite",
+					"Sprite4",
+					"Sprite5",
+					"Sprite8"
+				],
+				"subfolders": [],
+				"name": "HUD and Menus"
+			},
+			{
+				"items": [
+					"caravan_wreck",
+					"mainFarmBldg",
+					"shipwreck",
+					"sign_post",
+					"windmillBlades",
+					"tavern",
+					"watch_tower",
+					"windmill",
+					"windmill2",
+					"NightDayCycleSprite"
+				],
+				"subfolders": [],
+				"name": "mainMapObj"
+			},
+			{
+				"items": [
+					"Tilemap",
+					"Tilemap2",
+					"pyramid",
+					"collisionBlock",
+					"rowboat",
+					"Player_Mask",
+					"Player_Base",
+					"Sprite3",
+					"Water",
+					"Zone"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"leftPtr",
+							"rightPtr",
+							"upRightPtr",
+							"deadEndPtr",
+							"dangerPtr",
+							"downLeftPtr",
+							"downRightPtr",
+							"upLeftPtr"
+						],
+						"subfolders": [],
+						"name": "pointers"
+					},
+					{
+						"items": [
+							"Ankh"
+						],
+						"subfolders": [],
+						"name": "collectables"
+					},
+					{
+						"items": [
+							"Flag"
+						],
+						"subfolders": [],
+						"name": "objects"
+					}
+				],
+				"name": "platformObj"
+			},
+			{
+				"items": [
+					"Audio",
+					"Browser",
+					"Gamepad",
+					"Keyboard",
+					"FullScreen",
+					"Mouse",
+					"Touch",
+					"Dictionary"
+				],
+				"subfolders": [],
+				"name": "System"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [
+		{
+			"members": [
+				"Player_Base",
+				"Player_Mask"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"Boat_Base",
+				"rowboat"
+			],
+			"selectMode": "normal"
+		}
+	],
+	"families": {
+		"items": [
+			"Spritefonts"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"TitleScreen",
+			"MainGameScreen",
+			"FlightLevel",
+			"FarmMenu",
+			"0_Intro",
+			"Options",
+			"DesertRoom1",
+			"Objects",
+			"ShipMenu",
+			"Credits"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"eMainGameScreen",
+			"eTitleScreen",
+			"eFlightLevel",
+			"eFarmMenu",
+			"eIntro",
+			"eOptions",
+			"eCamera",
+			"ePlayer",
+			"eMain",
+			"eEffects",
+			"eLevelObjects",
+			"eMusic",
+			"eShipMenu",
+			"eCredits"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "Menu_Move.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 855199662070438
+				},
+				{
+					"name": "Collectible_1.webm",
+					"type": "video/webm",
+					"sid": 712624313024347
+				},
+				{
+					"name": "Collectible_2.webm",
+					"type": "video/webm",
+					"sid": 976150464843352
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "Purple Planet Music - Sunbeam (1_48) 120bpm (L).mp3",
+					"type": "audio/mpeg",
+					"sid": 923620618388045
+				},
+				{
+					"name": "Bio_UnitMetre_-_03_-_SciFi.mp3",
+					"type": "audio/mpeg",
+					"sid": 647538224572731
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 225715327502205,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 603150672650341,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 870157843916417,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 165683498771374,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 720140300236275,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 835414212902904,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 182884181857446,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "sign_post.svg",
+					"type": "image/svg+xml",
+					"sid": 934163695500380
+				},
+				{
+					"name": "windmill.svg",
+					"type": "image/svg+xml",
+					"sid": 261118630235963
+				},
+				{
+					"name": "tavern.svg",
+					"type": "image/svg+xml",
+					"sid": 783848652723105
+				},
+				{
+					"name": "farm.svg",
+					"type": "image/svg+xml",
+					"sid": 782264071618352
+				},
+				{
+					"name": "0001.gif",
+					"type": "image/gif",
+					"sid": 554260583040457
+				},
+				{
+					"name": "jailhouse.svg",
+					"type": "image/svg+xml",
+					"sid": 194238527085182
+				},
+				{
+					"name": "caravan_wreck.svg",
+					"type": "image/svg+xml",
+					"sid": 419151407357505
+				},
+				{
+					"name": "shipwreck.svg",
+					"type": "image/svg+xml",
+					"sid": 475537564122540
+				},
+				{
+					"name": "watch_tower.svg",
+					"type": "image/svg+xml",
+					"sid": 198659181309047
+				},
+				{
+					"name": "HUD_Font.png",
+					"type": "image/png",
+					"sid": 217052604978199
+				},
+				{
+					"name": "SpriteFont.png",
+					"type": "image/png",
+					"sid": 293117323358654
+				},
+				{
+					"name": "cave_entrance.svg",
+					"type": "image/svg+xml",
+					"sid": 426743106966097
+				},
+				{
+					"name": "stables.svg",
+					"type": "image/svg+xml",
+					"sid": 260851928668272
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "A point-and-click, platform, and fighter game with a story.",
+		"version": "1.0.0.0",
+		"author": "bsss8",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "file"
+	},
+	"viewportWidth": 854,
+	"viewportHeight": 480,
+	"firstLayout": "TitleScreen"
+}

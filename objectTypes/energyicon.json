@@ -1,0 +1,57 @@
+{
+	"name": "energyIcon",
+	"plugin-id": "Sprite",
+	"sid": 825650962315154,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 15,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4465153,
+						"collisionPoly": {
+							"points": [
+								0.4,
+								0.4,
+								0.5,
+								0.26666666666666666,
+								0.6,
+								0.3333333333333333,
+								0.6666666666666666,
+								0.5,
+								0.6,
+								0.6,
+								0.5,
+								0.8,
+								0.4,
+								0.5333333333333333,
+								0.26666666666666666,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 916239548684845,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

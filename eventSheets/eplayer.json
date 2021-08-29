@@ -1,0 +1,992 @@
+{
+	"name": "ePlayer",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Passive",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "#Position mask to base"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 140952947086516
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player_Mask",
+							"sid": 700650216289108,
+							"parameters": {
+								"x": "Player_Base.X",
+								"y": "Player_Base.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "rowboat",
+							"sid": 128069913034384,
+							"parameters": {
+								"x": "Boat_Base.X",
+								"y": "Boat_Base.Y"
+							}
+						}
+					],
+					"sid": 601115458253455
+				},
+				{
+					"eventType": "comment",
+					"text": "#Move kiwi to the top of the layer"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 492364755997307
+						}
+					],
+					"actions": [],
+					"sid": 941543387332314
+				}
+			],
+			"sid": 835743574968135
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Engine",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Functions",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "#Move"
+						},
+						{
+							"functionName": "Player_Move",
+							"functionDescription": "Automatically converted from 'Player_Move'",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [
+								{
+									"name": "direction",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"sid": 594418215411435
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 124204275616325,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 490331067993220,
+											"parameters": {
+												"variable": "direction",
+												"comparison": 0,
+												"value": "\"Right\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player_Base",
+											"sid": 738875959970193,
+											"behaviorType": "Platform",
+											"parameters": {
+												"control": "right"
+											}
+										}
+									],
+									"sid": 857429260285399
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 984794157830081,
+											"parameters": {
+												"variable": "direction",
+												"comparison": 0,
+												"value": "\"Left\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player_Base",
+											"sid": 516154442329966,
+											"behaviorType": "Platform",
+											"parameters": {
+												"control": "left"
+											}
+										}
+									],
+									"sid": 328326576069901
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "#Turn"
+						},
+						{
+							"functionName": "Player_Turn",
+							"functionDescription": "Automatically converted from 'Player_Turn'",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [
+								{
+									"name": "direction",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"sid": 577013939037749
+								}
+							],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 352106756895066,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 365585312780175,
+											"parameters": {
+												"variable": "direction",
+												"comparison": 0,
+												"value": "\"Right\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Player_Mask",
+											"sid": 857865897747369,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										}
+									],
+									"sid": 615820072509329
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 977483751496554,
+											"parameters": {
+												"variable": "direction",
+												"comparison": 0,
+												"value": "\"Left\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Player_Mask",
+											"sid": 214401621105598,
+											"parameters": {
+												"state": "mirrored"
+											}
+										}
+									],
+									"sid": 355137996661766
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "#Jump"
+						},
+						{
+							"functionName": "Player_Jump",
+							"functionDescription": "Automatically converted from 'Player_Jump'",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player_Base",
+									"sid": 416545348316297,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "jump"
+									}
+								},
+								{
+									"id": "play-by-name",
+									"objectClass": "Audio",
+									"sid": 934293189893023,
+									"parameters": {
+										"folder": "sounds",
+										"audio-file-name": "\"Kiwi_Jump\"",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"SFX\""
+									}
+								}
+							],
+							"sid": 519530737467321
+						},
+						{
+							"eventType": "comment",
+							"text": "#Fall"
+						},
+						{
+							"functionName": "Player_Fall",
+							"functionDescription": "Automatically converted from 'Player_Fall'",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 655863962085543
+						},
+						{
+							"eventType": "comment",
+							"text": "#Land"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-landed",
+									"objectClass": "Player_Base",
+									"sid": 669156581552877,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 542973481202295,
+									"parameters": {
+										"first-value": "Player_Base.Platform.VectorY",
+										"comparison": 5,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player_Base",
+									"sid": 159014882559191,
+									"parameters": {
+										"instance-variable": "Bounce",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 615579378547875
+						}
+					],
+					"sid": 641086428103091
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Input",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "#Move right"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 133745839102929,
+									"parameters": {
+										"key": 39
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 264865819446063,
+									"parameters": {
+										"key": 37
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player_Move",
+									"sid": 903086375420834,
+									"parameters": [
+										"\"Right\""
+									]
+								}
+							],
+							"sid": 472014704985174,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Turn right"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 297060005395395
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player_Turn",
+											"sid": 644688185491287,
+											"parameters": [
+												"\"Right\""
+											]
+										}
+									],
+									"sid": 459471879846914
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 726688268259931,
+									"parameters": {
+										"key": 68
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 832255820622609,
+									"parameters": {
+										"key": 37
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player_Move",
+									"sid": 614387150244667,
+									"parameters": [
+										"\"Right\""
+									]
+								}
+							],
+							"sid": 762959729877831,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Turn right"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 214465540797587
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player_Turn",
+											"sid": 335214132410630,
+											"parameters": [
+												"\"Right\""
+											]
+										}
+									],
+									"sid": 928961064466667
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "Alternate control using D-pad on a gamepad"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "Gamepad",
+									"sid": 863111153031342,
+									"parameters": {
+										"gamepad": "0",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-axis",
+									"objectClass": "Gamepad",
+									"sid": 759247881932731,
+									"parameters": {
+										"gamepad": "0",
+										"axis": "left-analog-x-axis",
+										"comparison": 2,
+										"value": "-5"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player_Move",
+									"sid": 891321091770331,
+									"parameters": [
+										"\"Right\""
+									]
+								}
+							],
+							"sid": 528913872516266,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 812257447295866
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player_Turn",
+											"sid": 557613800684353,
+											"parameters": [
+												"\"Right\""
+											]
+										}
+									],
+									"sid": 717906212511986
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "#Move left"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 518940587838036,
+									"parameters": {
+										"key": 37
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 735575413404642,
+									"parameters": {
+										"key": 39
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player_Move",
+									"sid": 171268149178741,
+									"parameters": [
+										"\"Left\""
+									]
+								}
+							],
+							"sid": 971490955975984,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Turn left"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 362149746090698
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player_Turn",
+											"sid": 377904232953328,
+											"parameters": [
+												"\"Left\""
+											]
+										}
+									],
+									"sid": 799282869525675
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 616156022684026,
+									"parameters": {
+										"key": 65
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 782973512293358,
+									"parameters": {
+										"key": 68
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player_Move",
+									"sid": 959243331769326,
+									"parameters": [
+										"\"Left\""
+									]
+								}
+							],
+							"sid": 398917736469136,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Turn left"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 366568100976448
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player_Turn",
+											"sid": 748286643148790,
+											"parameters": [
+												"\"Left\""
+											]
+										}
+									],
+									"sid": 725909163496165
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "Alternate control using D-pad on a gamepad"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "Gamepad",
+									"sid": 733241625638699,
+									"parameters": {
+										"gamepad": "0",
+										"axis": "left-analog-x-axis",
+										"comparison": 2,
+										"value": "-5"
+									}
+								},
+								{
+									"id": "compare-axis",
+									"objectClass": "Gamepad",
+									"sid": 146204169154481,
+									"parameters": {
+										"gamepad": "0",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "5"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player_Move",
+									"sid": 595525819242169,
+									"parameters": [
+										"\"Left\""
+									]
+								}
+							],
+							"sid": 313768169356629,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 743469610523580
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Player_Turn",
+											"sid": 246297372600173,
+											"parameters": [
+												"\"Left\""
+											]
+										}
+									],
+									"sid": 761332705661635
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "#Jump"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 602206857661872,
+									"parameters": {
+										"key": 87
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 174522338727945,
+									"parameters": {
+										"key": 90
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player_Jump",
+									"sid": 185939977944509
+								}
+							],
+							"sid": 985272247818547,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "comment",
+							"text": "Alternate control using A on a gamepad"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-button-pressed",
+									"objectClass": "Gamepad",
+									"sid": 788982822269008,
+									"parameters": {
+										"gamepad": "0",
+										"button": "button-a"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player_Jump",
+									"sid": 689924498793800
+								}
+							],
+							"sid": 836771867909483
+						},
+						{
+							"eventType": "comment",
+							"text": "#Stop jumping if user releases the key (or gamepad button). This is for variable jump height. (Only works if Player is not bouncing, like off an enemy or a spring)"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 303403417378474,
+									"parameters": {
+										"key": 90
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-button-down",
+									"objectClass": "Gamepad",
+									"sid": 815323861391724,
+									"parameters": {
+										"gamepad": "0",
+										"button": "button-a"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-jumping",
+									"objectClass": "Player_Base",
+									"sid": 506685953595211,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Player_Base",
+									"sid": 219065012483783,
+									"parameters": {
+										"instance-variable": "Bounce"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Player_Fall",
+									"sid": 630807292143186
+								}
+							],
+							"sid": 212152482255932
+						}
+					],
+					"sid": 296062597693267
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Animations",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "#Ground animations"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-floor",
+									"objectClass": "Player_Base",
+									"sid": 162737706465705,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [],
+							"sid": 439126067191788,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Player_Base",
+											"sid": 294966878908604,
+											"behaviorType": "Platform",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Player_Mask",
+											"sid": 790048068328990,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 767528860196744
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Player_Base",
+											"sid": 158305645017241,
+											"behaviorType": "Platform"
+										},
+										{
+											"id": "is-by-wall",
+											"objectClass": "Player_Base",
+											"sid": 937563422290511,
+											"behaviorType": "Platform",
+											"parameters": {
+												"side": "right"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "is-by-wall",
+											"objectClass": "Player_Base",
+											"sid": 571390550697616,
+											"behaviorType": "Platform",
+											"parameters": {
+												"side": "left"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Player_Mask",
+											"sid": 254005003759947,
+											"parameters": {
+												"animation": "\"Run\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 794554661244961
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "#Air animations"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-floor",
+									"objectClass": "Player_Base",
+									"sid": 523088736163926,
+									"behaviorType": "Platform",
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 196850743460280,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-jumping",
+											"objectClass": "Player_Base",
+											"sid": 789990522851373,
+											"behaviorType": "Platform"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Player_Mask",
+											"sid": 558446463117843,
+											"parameters": {
+												"animation": "\"Jump\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 843463569728013
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-falling",
+											"objectClass": "Player_Base",
+											"sid": 413628864662977,
+											"behaviorType": "Platform"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Player_Mask",
+											"sid": 639818331167733,
+											"parameters": {
+												"animation": "\"Jump\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 674523121220746
+								}
+							]
+						},
+						{
+							"eventType": "comment",
+							"text": "#Animation Misc"
+						},
+						{
+							"eventType": "comment",
+							"text": "This bases Kiwi's run animation speed on his movement speed"
+						}
+					],
+					"sid": 510158144558475
+				}
+			],
+			"sid": 408301422706835
+		}
+	],
+	"sid": 746736389573519
+}

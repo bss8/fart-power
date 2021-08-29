@@ -1,0 +1,842 @@
+{
+	"name": "eTitleScreen",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "CurrentMenu",
+			"type": "string",
+			"initialValue": "Menu_TitleScreen",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 709028165934626
+		},
+		{
+			"eventType": "variable",
+			"name": "MenuLock",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 511299381514052
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 632454122602797
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 738547299008860
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Clouds",
+					"sid": 801806679965838,
+					"parameters": {
+						"x": "Self.X - (2.5 * dt)"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Mountains_bg",
+					"sid": 123995956011292,
+					"parameters": {
+						"x": "Self.X - (5 * dt)"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "darkSand_sm",
+					"sid": 503575902069533,
+					"parameters": {
+						"x": "Self.X - (10 * dt)"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "lightsand_bg_sm",
+					"sid": 209711301113554,
+					"parameters": {
+						"x": "self.x - (15 * dt)"
+					}
+				}
+			],
+			"sid": 594039084152193
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 920141781729733
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 871135756516619,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"TitleScreen\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 964667673944736,
+					"parameters": {
+						"audio-file": "Purple Planet Music - Sunbeam (1_48) 120bpm (L)",
+						"loop": "looping",
+						"volume": "-20",
+						"tag-optional": "\"Music\""
+					}
+				}
+			],
+			"sid": 956560652461125
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 437720772454712,
+					"parameters": {
+						"first-value": "MenuLock",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 376974883297876,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Decide which menu object to use"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Menu",
+							"sid": 533912787690132,
+							"parameters": {
+								"instance-variable": "Menu",
+								"comparison": 0,
+								"value": "CurrentMenu"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 988039788189318,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Move up the menu, loop around if you've gone too far."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 710478712196669,
+									"parameters": {
+										"key": 38
+									}
+								},
+								{
+									"id": "on-button-pressed",
+									"objectClass": "Gamepad",
+									"sid": 411395008041224,
+									"parameters": {
+										"gamepad": "0",
+										"button": "d-pad-up"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Menu",
+									"sid": 637739392478191,
+									"parameters": {
+										"instance-variable": "Index",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 923103182303075,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Menu",
+											"sid": 747815921730688,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 2,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Menu",
+											"sid": 272593355292328,
+											"parameters": {
+												"instance-variable": "Index",
+												"value": "Self.Index_Max"
+											}
+										}
+									],
+									"sid": 260631835980430
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 339151748844124,
+											"parameters": {
+												"audio-file": "Menu_Move",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 421441021572449
+								}
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "comment",
+							"text": "Move down the menu, loop around if you've gone too far."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 624775394931194,
+									"parameters": {
+										"key": 40
+									}
+								},
+								{
+									"id": "on-button-pressed",
+									"objectClass": "Gamepad",
+									"sid": 501682410655779,
+									"parameters": {
+										"gamepad": "0",
+										"button": "d-pad-down"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Menu",
+									"sid": 275119502406468,
+									"parameters": {
+										"instance-variable": "Index",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 254011059663820,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Menu",
+											"sid": 995811083626268,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 4,
+												"value": "3"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Menu",
+											"sid": 113219407649770,
+											"parameters": {
+												"instance-variable": "Index",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 777840639208035
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 102127591792646,
+											"parameters": {
+												"audio-file": "Menu_Move",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"SFX\""
+											}
+										}
+									],
+									"sid": 593701310356064
+								}
+							],
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Highlight text"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Menu",
+							"sid": 849404937619990,
+							"parameters": {
+								"instance-variable": "Menu",
+								"comparison": 0,
+								"value": "CurrentMenu"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 488256921474639,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Spritefonts",
+									"sid": 304576149244201,
+									"parameters": {
+										"instance-variable": "Type",
+										"comparison": 0,
+										"value": "CurrentMenu"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 932909616999046,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Spritefonts",
+											"sid": 390391733779944,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 0,
+												"value": "Menu.Index"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-effect-parameter",
+											"objectClass": "Spritefonts",
+											"sid": 479176209510453,
+											"parameters": {
+												"effect": "\"Brightness\"",
+												"parameter-index": "0",
+												"value": "100"
+											}
+										},
+										{
+											"id": "set-effect-parameter",
+											"objectClass": "Spritefonts",
+											"sid": 665316620937879,
+											"parameters": {
+												"effect": "\"ReplaceColor\"",
+												"parameter-index": "1",
+												"value": "rgb(157, 49, 106)"
+											}
+										}
+									],
+									"sid": 331328889191009
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Spritefonts",
+											"sid": 616536996651600,
+											"parameters": {
+												"instance-variable": "Index",
+												"comparison": 1,
+												"value": "Menu.Index"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-effect-parameter",
+											"objectClass": "Spritefonts",
+											"sid": 699454131364933,
+											"parameters": {
+												"effect": "\"Brightness\"",
+												"parameter-index": "0",
+												"value": "50"
+											}
+										}
+									],
+									"sid": 332705658220569
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Make a selection"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 633676033656218,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 168484071835457,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-a"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 824633985856823,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Menu",
+									"sid": 596843618727929,
+									"parameters": {
+										"instance-variable": "Menu",
+										"comparison": 0,
+										"value": "CurrentMenu"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Spritefonts",
+									"sid": 687784380687899,
+									"parameters": {
+										"instance-variable": "Index",
+										"comparison": 0,
+										"value": "Menu.Index"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Menu_Select",
+									"sid": 520699752003758,
+									"parameters": [
+										"Spritefonts.UID"
+									]
+								}
+							],
+							"sid": 440820659580349
+						}
+					],
+					"isOrBlock": true
+				}
+			]
+		},
+		{
+			"functionName": "Menu_Select",
+			"functionDescription": "Automatically converted from 'Menu_Select'",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "spriteFontUid",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 921027800607169
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 190885927498402,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Menu selection on title screen"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 261925993239688,
+							"parameters": {
+								"variable": "CurrentMenu",
+								"comparison": 0,
+								"value": "\"Menu_TitleScreen\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 768481599964581,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Spritefonts",
+									"sid": 834846307950693,
+									"parameters": {
+										"unique-id": "spriteFontUid"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 467161833862953,
+									"parameters": {
+										"variable": "MenuLock",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 150501836410162,
+									"parameters": {
+										"variable": "MenuLock",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 611148411638316,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Start the game"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Spritefonts",
+											"sid": 247470685537342,
+											"parameters": {
+												"text-to-compare": "\"PLAY!\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 395009434117269,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-fade-in-time",
+											"objectClass": "FadeToBlack",
+											"sid": 613645445313122,
+											"behaviorType": "Fade",
+											"parameters": {
+												"fade-in-time": "3"
+											}
+										},
+										{
+											"id": "start-fade",
+											"objectClass": "FadeToBlack",
+											"sid": 746009278174003,
+											"behaviorType": "Fade"
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "FadeToBlack",
+											"sid": 581965120340090,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "fade-volume",
+											"objectClass": "Audio",
+											"sid": 912852902932393,
+											"parameters": {
+												"tag": "\"\"",
+												"db": "-100",
+												"duration": "3",
+												"ending": "stop"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 291822083516648,
+											"parameters": {
+												"seconds": "3"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 528742840282712,
+											"parameters": {
+												"layout": "MainGameScreen"
+											}
+										}
+									],
+									"sid": 515813737625755
+								},
+								{
+									"eventType": "comment",
+									"text": "Go to options screen"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Spritefonts",
+											"sid": 460451200004412,
+											"parameters": {
+												"text-to-compare": "\"OPTIONS\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 178382347715189,
+											"parameters": {
+												"layout": "Options"
+											}
+										}
+									],
+									"sid": 905538353335662
+								},
+								{
+									"eventType": "comment",
+									"text": "Go to credits screen"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-text",
+											"objectClass": "Spritefonts",
+											"sid": 952838868046851,
+											"parameters": {
+												"text-to-compare": "\"CREDITS\"",
+												"case-sensitivity": "ignore-case"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 779449428823368,
+											"parameters": {
+												"layout": "Credits"
+											}
+										}
+									],
+									"sid": 195267260115941
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "Animate animal sprites bouncing up and down between layers"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 560864964549794,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-y",
+					"objectClass": "cow2",
+					"sid": 558579873634251,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"vector-y": "-260"
+					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "cow2",
+					"sid": 901164667532933,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"deceleration": "20"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 659989426222220,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "cow2",
+					"sid": 998317861086986,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"vector-y": "180"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "pig2",
+					"sid": 614959211889978,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"vector-y": "-200"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "chicken2",
+					"sid": 900495524366070,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"vector-y": "-370"
+					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "chicken2",
+					"sid": 707836494179550,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"deceleration": "10"
+					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "pig2",
+					"sid": 460952342047057,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"deceleration": "60"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 690267469854434,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "chicken2",
+					"sid": 799231536445332,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"vector-y": "220"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 842407773508327,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "pig2",
+					"sid": 288729846539536,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"vector-y": "250"
+					}
+				}
+			],
+			"sid": 578297544847390
+		}
+	],
+	"sid": 377296542184134
+}

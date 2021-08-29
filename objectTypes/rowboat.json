@@ -1,0 +1,43 @@
+{
+	"name": "rowboat",
+	"plugin-id": "Sprite",
+	"sid": 889070994642967,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 586819964662140
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 95,
+						"height": 47,
+						"originX": 0.5052631578947369,
+						"originY": 0.9787234042553191,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5281619,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 596127298643583,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

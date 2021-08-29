@@ -1,0 +1,119 @@
+{
+	"name": "Cursor",
+	"plugin-id": "Sprite",
+	"sid": 557323729497296,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 32,
+						"originX": 0.7083333333333334,
+						"originY": 0.53125,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5195219,
+						"collisionPoly": {
+							"points": [
+								0.041666666666666664,
+								0.03125,
+								1,
+								0.03125,
+								1,
+								1,
+								0.041666666666666664,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 410582538001688,
+				"name": "MouseIdle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 28,
+						"height": 30,
+						"originX": 0.6071428571428571,
+						"originY": 0.5666666666666667,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8015794,
+						"collisionPoly": {
+							"points": [
+								0.03571428571428571,
+								0.03333333333333333,
+								1,
+								0.03333333333333333,
+								1,
+								1,
+								0.03571428571428571,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 840256317901060,
+				"name": "MouseLeft",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 30,
+						"originX": 0.7083333333333334,
+						"originY": 0.5666666666666667,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9899127,
+						"collisionPoly": {
+							"points": [
+								0.041666666666666664,
+								0.03333333333333333,
+								1,
+								0.03333333333333333,
+								1,
+								1,
+								0.041666666666666664,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 183536142841452,
+				"name": "MouseRight",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

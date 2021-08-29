@@ -1,0 +1,486 @@
+{
+	"name": "Pig",
+	"plugin-id": "Sprite",
+	"sid": 433945933885418,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 49,
+						"originX": 0.48148148148148145,
+						"originY": 0.4489795918367347,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6730596,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 48,
+						"originX": 0.48148148148148145,
+						"originY": 0.375,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6879300,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 47,
+						"originX": 0.48148148148148145,
+						"originY": 0.3404255319148936,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 110916,
+						"useCollisionPoly": true,
+						"duration": 3
+					},
+					{
+						"width": 27,
+						"height": 48,
+						"originX": 0.48148148148148145,
+						"originY": 0.3541666666666667,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8375554,
+						"useCollisionPoly": true,
+						"duration": 2
+					}
+				],
+				"sid": 610634175955666,
+				"name": "PigEatBack (Default)",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 1
+			},
+			{
+				"frames": [
+					{
+						"width": 62,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.3235294117647059,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9641451,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 63,
+						"height": 35,
+						"originX": 0.49206349206349204,
+						"originY": 0.3142857142857143,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9951597,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 35,
+						"originX": 0.484375,
+						"originY": 0.3142857142857143,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4920638,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 36,
+						"originX": 0.484375,
+						"originY": 0.3055555555555556,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 782957,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 728409160480373,
+				"name": "PigEatRight",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 61,
+						"height": 33,
+						"originX": 0.5409836065573771,
+						"originY": 0.3333333333333333,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2119172,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 61,
+						"height": 33,
+						"originX": 0.5573770491803278,
+						"originY": 0.3333333333333333,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8604350,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 61,
+						"height": 34,
+						"originX": 0.5409836065573771,
+						"originY": 0.3235294117647059,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1942055,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 61,
+						"height": 34,
+						"originX": 0.5409836065573771,
+						"originY": 0.3235294117647059,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 237700,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 943739256292833,
+				"name": "PigEatLeft",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 51,
+						"originX": 0.4827586206896552,
+						"originY": 0.35294117647058826,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 559018,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 49,
+						"originX": 0.4827586206896552,
+						"originY": 0.3673469387755102,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1288919,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 50,
+						"originX": 0.4827586206896552,
+						"originY": 0.36,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4369509,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 51,
+						"originX": 0.4827586206896552,
+						"originY": 0.35294117647058826,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5386795,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 500555906040099,
+				"name": "PigEatFront",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 49,
+						"originX": 0.48148148148148145,
+						"originY": 0.42857142857142855,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 655611,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 50,
+						"originX": 0.48148148148148145,
+						"originY": 0.44,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8221168,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 50,
+						"originX": 0.48148148148148145,
+						"originY": 0.42,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 197913,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 27,
+						"height": 51,
+						"originX": 0.48148148148148145,
+						"originY": 0.43137254901960786,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 315041,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 374477151406106,
+				"name": "PigWalkAway",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 62,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.34375,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6265055,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 62,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.35294117647058826,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5670080,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 62,
+						"height": 33,
+						"originX": 0.5,
+						"originY": 0.3333333333333333,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 133465,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 62,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.34285714285714286,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 893732,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 392064996905331,
+				"name": "PigWalkRight",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 61,
+						"height": 32,
+						"originX": 0.5409836065573771,
+						"originY": 0.34375,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8676151,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 61,
+						"height": 32,
+						"originX": 0.5573770491803278,
+						"originY": 0.375,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3686340,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 61,
+						"height": 32,
+						"originX": 0.5409836065573771,
+						"originY": 0.34375,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8418778,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 61,
+						"height": 33,
+						"originX": 0.5409836065573771,
+						"originY": 0.36363636363636365,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3641920,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 849519236651457,
+				"name": "PigWalkLeft",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 49,
+						"originX": 0.4827586206896552,
+						"originY": 0.3673469387755102,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7011425,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 48,
+						"originX": 0.4827586206896552,
+						"originY": 0.3958333333333333,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9636365,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 48,
+						"originX": 0.4827586206896552,
+						"originY": 0.375,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1585786,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 50,
+						"originX": 0.4827586206896552,
+						"originY": 0.38,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9751798,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 510409413840202,
+				"name": "PigWalkTowards",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

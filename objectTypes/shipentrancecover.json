@@ -1,0 +1,57 @@
+{
+	"name": "shipEntranceCover",
+	"plugin-id": "Sprite",
+	"sid": 978793584214108,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 82,
+						"height": 82,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7368412,
+						"collisionPoly": {
+							"points": [
+								0.45121951219512196,
+								0.45121951219512196,
+								0.5,
+								0.47560975609756095,
+								0.5365853658536586,
+								0.45121951219512196,
+								0.5853658536585366,
+								0.5,
+								0.8292682926829268,
+								0.8292682926829268,
+								0.5,
+								0.9878048780487805,
+								0.18292682926829268,
+								0.8048780487804879,
+								0.3780487804878049,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 877062139896068,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

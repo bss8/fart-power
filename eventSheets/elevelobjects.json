@@ -1,0 +1,297 @@
+{
+	"name": "eLevelObjects",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Collectibles",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "A little trick to make a \"wave\" motion on collectibles, using the sine behavior"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 521134686074524
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cycle-position",
+							"objectClass": "Ankh",
+							"sid": 394378393904625,
+							"behaviorType": "Sine",
+							"parameters": {
+								"cycle-position": " (self.x % 128) / 128"
+							}
+						}
+					],
+					"sid": 346270644316289
+				},
+				{
+					"eventType": "comment",
+					"text": "Grab a collectible"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player_Base",
+							"sid": 412515923226071,
+							"parameters": {
+								"object": "Ankh"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 131569419129006,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Beetle (+1)"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Ankh",
+									"sid": 572900184468594,
+									"parameters": {
+										"animation": "\"Default\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 632092821864393,
+									"parameters": {
+										"audio-file": "Menu_Move",
+										"loop": "not-looping",
+										"volume": "20",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "add-key",
+									"objectClass": "Dictionary",
+									"sid": 929993334837671,
+									"parameters": {
+										"key": "\"Beetles\"",
+										"value": "clamp(Self.Get(\"Beetles\") + 1,0,99)"
+									}
+								}
+							],
+							"sid": 764548386476381
+						},
+						{
+							"eventType": "comment",
+							"text": "Gold Beetle (+10)"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Ankh",
+									"sid": 805190287010496,
+									"parameters": {
+										"animation": "\"GoldBeetle\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-key",
+									"objectClass": "Dictionary",
+									"sid": 647266692998614,
+									"parameters": {
+										"key": "\"Beetles\"",
+										"value": "clamp(Self.Get(\"Beetles\") + 10,0,99)"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 162194266090732,
+									"parameters": {
+										"audio-file": "Collectible_2",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 406594249465737
+						},
+						{
+							"eventType": "comment",
+							"text": "Health (+1)"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Ankh",
+									"sid": 693331858802217,
+									"parameters": {
+										"animation": "\"Kiwi\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-key",
+									"objectClass": "Dictionary",
+									"sid": 801926813201824,
+									"parameters": {
+										"key": "\"Health\"",
+										"value": "clamp(Self.Get(\"Health\") + 1,0,2)"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 523145642506197,
+									"parameters": {
+										"audio-file": "Collectible_1",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 467526742991716
+						},
+						{
+							"eventType": "comment",
+							"text": "Sparkle effects"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 238652371638943,
+									"parameters": {
+										"count": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 742132822423457,
+									"parameters": {
+										"object-to-create": "GenericParticle",
+										"layer": "\"Objects\"",
+										"x": "Ankh.X - Ankh.Width / 2 + random(Ankh.Width)",
+										"y": "Ankh.Y - Ankh.Height / 2 + random(Ankh.Height)",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "GenericParticle",
+									"sid": 233500547522235,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "270"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "GenericParticle",
+									"sid": 884110762214164,
+									"parameters": {
+										"animation": "\"Default\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "GenericParticle",
+									"sid": 274538015120958,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "60 + random(60)"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 137334744696636,
+									"parameters": {
+										"seconds": "0.8"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "GenericParticle",
+									"sid": 453321050427303
+								}
+							],
+							"sid": 592923066124326
+						},
+						{
+							"eventType": "comment",
+							"text": "You could just destroy the collectible here, but there is some visual polish in having it flash white beforehand."
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Ankh",
+									"sid": 879151380784813,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "Ankh",
+									"sid": 140620498390584,
+									"parameters": {
+										"effect": "\"Brightness\"",
+										"parameter-index": "0",
+										"value": "200"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 480631826585990,
+									"parameters": {
+										"seconds": "0.05"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Ankh",
+									"sid": 186864836702205
+								}
+							],
+							"sid": 795944544868065
+						}
+					]
+				}
+			],
+			"sid": 995096282380210
+		}
+	],
+	"sid": 998223714190577
+}

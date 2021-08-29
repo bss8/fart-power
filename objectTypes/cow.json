@@ -1,0 +1,486 @@
+{
+	"name": "Cow",
+	"plugin-id": "Sprite",
+	"sid": 512631249562546,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 72,
+						"originX": 0.4827586206896552,
+						"originY": 0.3472222222222222,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5336837,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 67,
+						"originX": 0.4827586206896552,
+						"originY": 0.29850746268656714,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2676444,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 30,
+						"height": 61,
+						"originX": 0.5,
+						"originY": 0.22950819672131148,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3976901,
+						"useCollisionPoly": true,
+						"duration": 2
+					},
+					{
+						"width": 29,
+						"height": 60,
+						"originX": 0.4827586206896552,
+						"originY": 0.21666666666666667,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8364998,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 483329271257411,
+				"name": "CowEatBack (Default)",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
+			},
+			{
+				"frames": [
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.3972602739726027,
+						"originY": 0.45652173913043476,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1732210,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 73,
+						"height": 44,
+						"originX": 0.3972602739726027,
+						"originY": 0.4318181818181818,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 623947,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 70,
+						"height": 44,
+						"originX": 0.4142857142857143,
+						"originY": 0.4318181818181818,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7780012,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 70,
+						"height": 44,
+						"originX": 0.4142857142857143,
+						"originY": 0.4318181818181818,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1243606,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 578040423337968,
+				"name": "CowEatRight",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.6027397260273972,
+						"originY": 0.45652173913043476,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1447057,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 73,
+						"height": 44,
+						"originX": 0.6027397260273972,
+						"originY": 0.4318181818181818,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1685584,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 70,
+						"height": 44,
+						"originX": 0.5857142857142857,
+						"originY": 0.4318181818181818,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9611594,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 70,
+						"height": 44,
+						"originX": 0.5857142857142857,
+						"originY": 0.4318181818181818,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3409658,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 168569608774615,
+				"name": "CowEatLeft",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 61,
+						"originX": 0.5,
+						"originY": 0.32786885245901637,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9835061,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 30,
+						"height": 61,
+						"originX": 0.5,
+						"originY": 0.32786885245901637,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 235073,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 31,
+						"height": 61,
+						"originX": 0.5161290322580645,
+						"originY": 0.32786885245901637,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2957563,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 30,
+						"height": 61,
+						"originX": 0.5,
+						"originY": 0.32786885245901637,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9425428,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 954976682743180,
+				"name": "CowEatFront",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 73,
+						"originX": 0.4827586206896552,
+						"originY": 0.3287671232876712,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8309401,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 72,
+						"originX": 0.4827586206896552,
+						"originY": 0.3472222222222222,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3410922,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 73,
+						"originX": 0.4827586206896552,
+						"originY": 0.3287671232876712,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3734600,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 73,
+						"originX": 0.4827586206896552,
+						"originY": 0.3424657534246575,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7113352,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 407242598003749,
+				"name": "CowWalkAway",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.3972602739726027,
+						"originY": 0.43478260869565216,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9847462,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.3972602739726027,
+						"originY": 0.45652173913043476,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 28690,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.3972602739726027,
+						"originY": 0.43478260869565216,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 722439,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.3972602739726027,
+						"originY": 0.45652173913043476,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8552074,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 564942214754030,
+				"name": "CowWalkRight",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.6164383561643836,
+						"originY": 0.43478260869565216,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4866960,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.6164383561643836,
+						"originY": 0.45652173913043476,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8632165,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.6164383561643836,
+						"originY": 0.43478260869565216,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7927739,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 73,
+						"height": 46,
+						"originX": 0.6164383561643836,
+						"originY": 0.45652173913043476,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4612774,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 583203431122997,
+				"name": "CowWalkLeft",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 29,
+						"height": 60,
+						"originX": 0.4827586206896552,
+						"originY": 0.31666666666666665,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4780533,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 61,
+						"originX": 0.4827586206896552,
+						"originY": 0.32786885245901637,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7088541,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 60,
+						"originX": 0.4827586206896552,
+						"originY": 0.31666666666666665,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 926240,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 29,
+						"height": 62,
+						"originX": 0.4827586206896552,
+						"originY": 0.3225806451612903,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6063058,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 844484525637851,
+				"name": "CowWalkTowards",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

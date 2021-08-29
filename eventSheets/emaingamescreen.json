@@ -1,0 +1,775 @@
+{
+	"name": "eMainGameScreen",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Dragging",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 160519648042883
+		},
+		{
+			"eventType": "variable",
+			"name": "DragScrollX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 980444525068759
+		},
+		{
+			"eventType": "variable",
+			"name": "DragScrollY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 496419805588645
+		},
+		{
+			"eventType": "variable",
+			"name": "DragMouseX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 277322652014817
+		},
+		{
+			"eventType": "variable",
+			"name": "DragMouseY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 585182111833329
+		},
+		{
+			"eventType": "variable",
+			"name": "OldMouseX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 537743375892708
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 560484287196967
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "NightDayCycleSprite",
+					"sid": 250662036155600,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 753695608316996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 324399176724575,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 969674819047478,
+					"parameters": {
+						"object": "mainFarmBldg"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 711280830530375,
+					"parameters": {
+						"object": "Chicken"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 437196014505302,
+					"parameters": {
+						"variable": "Dragging",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 361463337830238,
+					"parameters": {
+						"variable": "DragMouseX",
+						"value": "Mouse.AbsoluteX"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 756375024435053,
+					"parameters": {
+						"variable": "DragMouseY",
+						"value": "Mouse.AbsoluteY"
+					}
+				}
+			],
+			"sid": 558858841820948
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "mouse-button-is-down",
+					"objectClass": "Mouse",
+					"sid": 572382281294139,
+					"parameters": {
+						"mouse-button": "left"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 201757363605797,
+					"parameters": {
+						"variable": "Dragging",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 919370502675563,
+					"parameters": {
+						"variable": "DragScrollX",
+						"value": "scrollx"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 316035653479109,
+					"parameters": {
+						"variable": "DragScrollY",
+						"value": "scrolly"
+					}
+				}
+			],
+			"sid": 563372939975860,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 936211246851951
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 578846324062933,
+					"parameters": {
+						"variable": "Dragging",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 491154035898091,
+					"parameters": {
+						"x": "DragScrollX + DragMouseX - Mouse.AbsoluteX",
+						"y": "DragScrollY + DragMouseY - Mouse.AbsoluteY"
+					}
+				}
+			],
+			"sid": 361755285812667
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-in-touch",
+					"objectClass": "Touch",
+					"sid": 205852216164642
+				},
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 188353402418690,
+					"parameters": {
+						"object": "Chicken"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 286554969580697,
+					"parameters": {
+						"variable": "Dragging",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 797274087934466
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-in-touch",
+					"objectClass": "Touch",
+					"sid": 122264480499655,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 785238284837738,
+					"parameters": {
+						"variable": "Dragging",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 530603854533617,
+					"parameters": {
+						"variable": "DragScrollX",
+						"value": "scrollx"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 495074069673492,
+					"parameters": {
+						"variable": "DragScrollY",
+						"value": "scrolly"
+					}
+				}
+			],
+			"sid": 519908594392944
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 354668736879191,
+					"parameters": {
+						"variable": "Dragging",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 255070483964938,
+					"parameters": {
+						"x": "DragScrollX + DragMouseX - Touch.AbsoluteX",
+						"y": "DragScrollY + DragMouseY - Touch.AbsoluteY"
+					}
+				}
+			],
+			"sid": 208330051909893
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 483865497978119
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 775916578342036,
+					"parameters": {
+						"variable": "DragMouseX",
+						"value": "Touch.AbsoluteX"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 492197288888188,
+					"parameters": {
+						"variable": "DragMouseY",
+						"value": "Touch.AbsoluteY"
+					}
+				}
+			],
+			"sid": 941642154140121
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 680475371591426,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 630476003345776,
+					"parameters": {
+						"object": "mainFarmBldg"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 876407510819940,
+					"parameters": {
+						"layout": "FarmMenu"
+					}
+				}
+			],
+			"sid": 392516654438063
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 291837307576376,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 214074640038625,
+					"parameters": {
+						"object": "shipwreck"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 399430979142402,
+					"parameters": {
+						"layout": "ShipMenu"
+					}
+				}
+			],
+			"sid": 573151689882908
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 300329728717205,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 814726119385346,
+					"parameters": {
+						"object": "cave_entrance"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 489876500947089,
+					"parameters": {
+						"layout": "DesertRoom1"
+					}
+				}
+			],
+			"sid": 438289486607070
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 243118602602369,
+					"parameters": {
+						"first-value": "Mouse.X - OldMouseX",
+						"comparison": 2,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Cursor",
+					"sid": 625142314986194,
+					"parameters": {
+						"animation": "\"MouseLeft\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-cursor-from-sprite",
+					"objectClass": "Mouse",
+					"sid": 470360374291783,
+					"parameters": {
+						"sprite": "Cursor"
+					}
+				}
+			],
+			"sid": 708297098390222
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 496639274743614,
+					"parameters": {
+						"first-value": "Mouse.X - OldMouseX",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Cursor",
+					"sid": 631961534437928,
+					"parameters": {
+						"animation": "\"MouseIdle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-cursor-from-sprite",
+					"objectClass": "Mouse",
+					"sid": 939890339527242,
+					"parameters": {
+						"sprite": "Cursor"
+					}
+				}
+			],
+			"sid": 696862989893172
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 717916942105831,
+					"parameters": {
+						"first-value": "Mouse.X - OldMouseX",
+						"comparison": 4,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Cursor",
+					"sid": 507392991669314,
+					"parameters": {
+						"animation": "\"MouseRight\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-cursor-from-sprite",
+					"objectClass": "Mouse",
+					"sid": 744593372638666,
+					"parameters": {
+						"sprite": "Cursor"
+					}
+				}
+			],
+			"sid": 721911946846325
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 664412237568084
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 678175199428453,
+					"parameters": {
+						"variable": "OldMouseX",
+						"value": "Mouse.X"
+					}
+				}
+			],
+			"sid": 114744896227850
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 963503262548999,
+					"parameters": {
+						"object": "mainFarmBldg"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "mainFarmBldg",
+					"sid": 133171668584113,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "mainFarmBldg",
+					"sid": 932697516604661,
+					"parameters": {
+						"effect": "\"Brightness\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				}
+			],
+			"sid": 620965737042890,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 977361058137603,
+					"parameters": {
+						"object": "cave_entrance"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "cave_entrance",
+					"sid": 911214036151332,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "cave_entrance",
+					"sid": 905532588931837,
+					"parameters": {
+						"effect": "\"Brightness\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				}
+			],
+			"sid": 139235603767136,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 405099962995351,
+					"parameters": {
+						"object": "shipwreck"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "shipwreck",
+					"sid": 836932500345049,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "shipwreck",
+					"sid": 851622740405538,
+					"parameters": {
+						"effect": "\"Brightness\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				}
+			],
+			"sid": 106349978592515,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 242333576724944,
+					"parameters": {
+						"object": "mainFarmBldg"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "mainFarmBldg",
+					"sid": 616483355960302,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 125488849136611,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 430701792885130,
+					"parameters": {
+						"object": "cave_entrance"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "cave_entrance",
+					"sid": 520925048115796,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 818826254673859
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 772219522182853,
+					"parameters": {
+						"object": "shipwreck"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "shipwreck",
+					"sid": 224227678366317,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 962048247662365
+		},
+		{
+			"eventType": "script",
+			"script": "runtime.mouse.getMousePosition"
+		}
+	],
+	"sid": 156719044849719
+}

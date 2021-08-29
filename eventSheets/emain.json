@@ -1,0 +1,88 @@
+{
+	"name": "eMain",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "eCamera"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "ePlayer"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eEffects"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eLevelObjects"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eMusic"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 174805299758634
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 379466869097126,
+					"parameters": {
+						"width": "384",
+						"height": "320"
+					}
+				},
+				{
+					"callFunction": "Transition",
+					"sid": 936360962222320,
+					"parameters": [
+						"\"In\""
+					]
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Zone",
+					"sid": 626382301284701,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 802376437892617
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Zone",
+					"sid": 645507359284306,
+					"parameters": {
+						"object": "Player_Mask"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 569923506252765,
+					"parameters": {
+						"x": "lerp(scrollx,(clamp(Player_Base.X,zone.X+(192),zone.X+zone.Width-(192))),0.1*20*dt)",
+						"y": "lerp(scrolly,(clamp(Player_Base.Y,zone.Y+(160),zone.Y+zone.Height-(160))),0.1*20*dt)"
+					}
+				}
+			],
+			"sid": 133575438870179
+		}
+	],
+	"sid": 721060269292513
+}

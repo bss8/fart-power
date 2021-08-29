@@ -1,0 +1,55 @@
+{
+	"name": "Mountains_bg",
+	"plugin-id": "Sprite",
+	"sid": 634477357233403,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "wrap",
+			"name": "Wrap",
+			"sid": 976010627220782
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 578,
+						"height": 244,
+						"originX": 0.5,
+						"originY": 0.3319672131147541,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6285713,
+						"collisionPoly": {
+							"points": [
+								0.0017301038062283738,
+								0,
+								0.9982698961937716,
+								0,
+								0.9982698961937716,
+								0.9959016393442623,
+								0.0017301038062283738,
+								0.9959016393442623
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 350092155796232,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
