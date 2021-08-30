@@ -22,6 +22,11 @@
 								"enabled": true,
 								"tags": ""
 							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {

@@ -9,6 +9,16 @@
 			"behaviorId": "Sin",
 			"name": "Sine",
 			"sid": 586819964662140
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 352533352524435
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 684613716775185
 		}
 	],
 	"effectTypes": [],
@@ -17,25 +27,45 @@
 			{
 				"frames": [
 					{
-						"width": 95,
-						"height": 47,
-						"originX": 0.5052631578947369,
-						"originY": 0.9787234042553191,
+						"width": 150,
+						"height": 74,
+						"originX": 0.5033333333333333,
+						"originY": 0.8040540540540541,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5281619,
+						"imageSpriteId": 2436336,
+						"collisionPoly": {
+							"points": [
+								0.19333333333333322,
+								0.25000000000000056,
+								0.6155555555555551,
+								0.18243243243243243,
+								0.8222222222222211,
+								0.30180180180180255,
+								0.7788888888888884,
+								0.5045045045045045,
+								0.6777777777777776,
+								0.709459459459459,
+								0.5255555555555552,
+								0.797297297297297,
+								0.1888888888888888,
+								0.768018018018018,
+								0.18666666666666668,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
 				"sid": 596127298643583,
 				"name": "Default",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 2
 			}
 		],
 		"subfolders": []

@@ -288,6 +288,49 @@
 							"sid": 795944544868065
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player_Base",
+							"sid": 125777566015752,
+							"parameters": {
+								"object": "Boat_Base"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 558057491732075,
+							"parameters": {
+								"audio-file": "Menu_Move",
+								"loop": "not-looping",
+								"volume": "20",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Boat_Base",
+							"sid": 903649074497856,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetX",
+								"end-value": "1450",
+								"time": "7",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 418710535204749
 				}
 			],
 			"sid": 995096282380210

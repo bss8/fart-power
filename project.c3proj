@@ -192,6 +192,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r260",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Flash",
 			"name": "Flash",
 			"author": "Scirra",
@@ -266,7 +274,6 @@
 			"CameraZone",
 			"Array",
 			"Transition",
-			"Boat_Base",
 			"BG_Cave_1",
 			"GenericParticle",
 			"animatedWater",
@@ -386,7 +393,8 @@
 					"Player_Base",
 					"Sprite3",
 					"Water",
-					"Zone"
+					"Zone",
+					"Boat_Base"
 				],
 				"subfolders": [
 					{
@@ -405,7 +413,8 @@
 					},
 					{
 						"items": [
-							"Ankh"
+							"Ankh",
+							"Ankh2"
 						],
 						"subfolders": [],
 						"name": "collectables"
@@ -485,7 +494,7 @@
 			"eOptions",
 			"eCamera",
 			"ePlayer",
-			"eMain",
+			"eDesertRoom1",
 			"eEffects",
 			"eLevelObjects",
 			"eMusic",
