@@ -260,7 +260,7 @@
 		"items": [
 			"countersBg",
 			"Timeline",
-			"SpriteFont",
+			"SpriteCloseBtn",
 			"FadeToBlack",
 			"cave_entrance",
 			"CameraZone",
@@ -278,7 +278,7 @@
 			"jumpingFish",
 			"jailhouse",
 			"stables",
-			"Sprite6",
+			"ShipBlueBg",
 			"Sprite7",
 			"9patch",
 			"Sprite9",
@@ -294,7 +294,8 @@
 			"Scythe",
 			"WheatFarm",
 			"HelpText",
-			"HelpTextBg"
+			"HelpTextBg",
+			"FarmYellowBg"
 		],
 		"subfolders": [
 			{

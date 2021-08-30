@@ -1,34 +1,29 @@
 {
-	"name": "Scythe",
+	"name": "ShipBlueBg",
 	"plugin-id": "Sprite",
-	"sid": 661302274470312,
+	"sid": 867128620598878,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "brightness",
-			"name": "Brightness"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 58,
-						"height": 63,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
-						"originY": 0.5079365079365079,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 567889,
+						"imageSpriteId": 8641343,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 786966916454504,
+				"sid": 927999285721114,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

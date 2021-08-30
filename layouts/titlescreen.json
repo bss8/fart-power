@@ -415,7 +415,7 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "LOAD",
 						"enable-bbcode": false,
@@ -481,7 +481,7 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "PLAY!",
 						"enable-bbcode": false,
@@ -792,7 +792,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "UP/DOWN ARROWS TO MOVE",
 						"enable-bbcode": false,
@@ -857,7 +857,7 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "SPACE TO SELECT",
 						"enable-bbcode": false,
@@ -955,7 +955,7 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "OPTIONS",
 						"enable-bbcode": false,
@@ -1021,7 +1021,7 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "[scale=2]FART-POWER 3000[/scale]",
 						"enable-bbcode": true,
@@ -1086,7 +1086,7 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "CREDITS",
 						"enable-bbcode": false,

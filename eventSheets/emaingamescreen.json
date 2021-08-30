@@ -512,6 +512,68 @@
 				{
 					"id": "on-click",
 					"objectClass": "Mouse",
+					"sid": 549366447105595,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 656298939405426,
+					"parameters": {
+						"object": "Scythe"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 518650343135898,
+					"parameters": {
+						"variable": "hasScythe",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 361272953562803,
+					"parameters": {
+						"audio-file": "Menu_Move",
+						"loop": "not-looping",
+						"volume": "20",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Scythe",
+					"sid": 927633805149518
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 830021866967504,
+					"parameters": {
+						"object-to-create": "Scythe",
+						"layer": "3",
+						"x": "85.123373",
+						"y": "73.227537",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 683221204025999
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
 					"sid": 531377414629703,
 					"parameters": {
 						"mouse-button": "left",
@@ -548,12 +610,12 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 926295011262596,
+					"sid": 642540529071316,
 					"parameters": {
 						"audio-file": "Menu_Move",
 						"loop": "not-looping",
 						"volume": "20",
-						"tag-optional": "\"\""
+						"tag-optional": "\"Music\""
 					}
 				}
 			],
@@ -800,6 +862,51 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
+					"sid": 696166919429086,
+					"parameters": {
+						"object": "Scythe"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 306264237737195,
+					"parameters": {
+						"first-value": "Scythe.UID",
+						"comparison": 0,
+						"second-value": "267"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Scythe",
+					"sid": 287123363940720,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "Scythe",
+					"sid": 965694360598475,
+					"parameters": {
+						"effect": "\"Brightness\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				}
+			],
+			"sid": 301401334562890
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
 					"sid": 465213865048901,
 					"parameters": {
 						"object": "SecretBase"
@@ -922,6 +1029,32 @@
 				}
 			],
 			"sid": 962048247662365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 674841088934655,
+					"parameters": {
+						"object": "Scythe"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Scythe",
+					"sid": 341441096373157,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 327439719657155
 		},
 		{
 			"eventType": "block",

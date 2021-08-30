@@ -4884,6 +4884,13 @@
 					"uid": 267,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"Brightness": {
+							"parameters": {
+								"brightness": 1
+							}
+						}
+					},
 					"world": {
 						"x": 803.9803466796875,
 						"y": 792.4043579101562,

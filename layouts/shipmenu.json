@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Sprite6",
+					"type": "ShipBlueBg",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -189,7 +189,7 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "X",
 						"enable-bbcode": false,
@@ -379,7 +379,7 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "ENERGY PROTOTYPE SELECTOR 19.07.33 MK-II",
 						"enable-bbcode": false,

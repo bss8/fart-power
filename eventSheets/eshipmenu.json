@@ -1,5 +1,39 @@
 {
 	"name": "eShipMenu",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 139004389954340,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 234336460249745,
+					"parameters": {
+						"object": "SpriteCloseBtn"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 800371992240750,
+					"parameters": {
+						"layout": "MainGameScreen"
+					}
+				}
+			],
+			"sid": 800593538135833
+		}
+	],
 	"sid": 732218805529434
 }

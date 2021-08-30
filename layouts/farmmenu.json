@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Sprite6",
+					"type": "FarmYellowBg",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -18,81 +18,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 427,
-						"y": 240,
-						"width": 854,
-						"height": 480,
+						"x": 432,
+						"y": 245,
+						"width": 860,
+						"height": 488,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "caravan_wreck",
-					"properties": {
-						"svg-file": 419151407357505,
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 17,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 617,
-						"y": 248,
-						"width": 231,
-						"height": 230,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "FarmStoreSign",
-					"properties": {
-						"text": "Underwater Terminal",
-						"enable-bbcode": true,
-						"font": "Algerian",
-						"size": 28,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 19,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 228,
-						"y": 13,
-						"width": 458,
-						"height": 47,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -133,128 +64,7 @@
 		{
 			"name": "Layer 1",
 			"overriden": 0,
-			"instances": [
-				{
-					"type": "FarmMenuBg",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 18,
-					"instanceVariables": {},
-					"behaviors": {},
-					"effects": {
-						"Noise": {
-							"parameters": {
-								"intensity": 0.1,
-								"color": 0.5
-							}
-						},
-						"WaterBackground": {
-							"parameters": {
-								"speed": 0.05,
-								"x-speed": 0.1,
-								"y-speed": 0.1,
-								"intensity": 2,
-								"frequency": 2,
-								"angle": 6,
-								"delta": 20,
-								"reflectivity": 300,
-								"emboss": 0.3
-							}
-						}
-					},
-					"world": {
-						"x": 587,
-						"y": 239,
-						"width": 267,
-						"height": 238,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SpriteFont",
-					"properties": {
-						"text": "X",
-						"enable-bbcode": false,
-						"character-width": 8,
-						"character-height": 10,
-						"character-set": " !\"  /&'()*+,-./0123456789:;<=>?ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]    ",
-						"spacing-data": "",
-						"scale": 2,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 14,
-					"instanceVariables": {
-						"Type": "Menu_TitleScreen",
-						"Index": 1
-					},
-					"behaviors": {},
-					"effects": {
-						"Brightness": {
-							"parameters": {
-								"brightness": 1
-							}
-						},
-						"ReplaceColor": {
-							"parameters": {
-								"source-color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"replace-color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"tolerance": 0.01
-							}
-						}
-					},
-					"world": {
-						"x": 779,
-						"y": 8,
-						"width": 69,
-						"height": 28,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "additive"
-					}
-				}
-			],
+			"instances": [],
 			"sid": 808024513263167,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -302,8 +112,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 47,
-						"y": 91,
+						"x": 46,
+						"y": 93,
 						"width": 540,
 						"height": 364,
 						"originX": 0,
@@ -379,7 +189,7 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "ENERGY PROTOTYPE SELECTOR 19.07.33 MK-II",
 						"enable-bbcode": false,
@@ -427,10 +237,10 @@
 						}
 					},
 					"world": {
-						"x": 61,
+						"x": 72,
 						"y": 104,
-						"width": 504,
-						"height": 53,
+						"width": 392,
+						"height": 60,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -496,6 +306,142 @@
 							1,
 							1,
 							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FarmStoreSign",
+					"properties": {
+						"text": "FARM TERMINAL",
+						"enable-bbcode": true,
+						"font": "Algerian",
+						"size": 28,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 19,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 228,
+						"y": 13,
+						"width": 458,
+						"height": 47,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Avatar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 755,
+						"y": 400,
+						"width": 81.44651856676057,
+						"height": 92.49392195139617,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SpriteCloseBtn",
+					"properties": {
+						"text": "X",
+						"enable-bbcode": false,
+						"character-width": 8,
+						"character-height": 10,
+						"character-set": " !\"  /&'()*+,-./0123456789:;<=>?ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]    ",
+						"spacing-data": "",
+						"scale": 2,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 14,
+					"instanceVariables": {
+						"Type": "Menu_TitleScreen",
+						"Index": 1
+					},
+					"behaviors": {},
+					"effects": {
+						"Brightness": {
+							"parameters": {
+								"brightness": 1
+							}
+						},
+						"ReplaceColor": {
+							"parameters": {
+								"source-color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"replace-color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"tolerance": 0.01
+							}
+						}
+					},
+					"world": {
+						"x": 492,
+						"y": 117,
+						"width": 69,
+						"height": 28,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							0,
+							0,
 							1
 						],
 						"angle": 0,
