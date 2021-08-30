@@ -621,9 +621,9 @@
 										{
 											"id": "fade-volume",
 											"objectClass": "Audio",
-											"sid": 912852902932393,
+											"sid": 416371893100078,
 											"parameters": {
-												"tag": "\"\"",
+												"tag": "\"Music\"",
 												"db": "-100",
 												"duration": "3",
 												"ending": "stop"

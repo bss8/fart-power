@@ -62,6 +62,16 @@
 			"sid": 537743375892708
 		},
 		{
+			"eventType": "variable",
+			"name": "hasScythe",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "Does player have the scythe to farm?",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 921718260736115
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -456,6 +466,103 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 802170657112370,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 673188525030468,
+					"parameters": {
+						"object": "SecretBase"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 149259150824869,
+					"parameters": {
+						"layout": "SecretBase"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 136600983898540,
+					"parameters": {
+						"audio-file": "Menu_Move",
+						"loop": "not-looping",
+						"volume": "20",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 845794904667366
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 531377414629703,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 273378623564530,
+					"parameters": {
+						"object": "WheatFarm"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 818147864312027,
+					"parameters": {
+						"variable": "hasScythe"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "HelpText",
+					"sid": 652645318266616,
+					"parameters": {
+						"text": "\"Well now partner...you can't farm without a scythe! There should be one lying around here somewhere, try looking around the fields for one.\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 926295011262596,
+					"parameters": {
+						"audio-file": "Menu_Move",
+						"loop": "not-looping",
+						"volume": "20",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 815831188453389
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "compare-two-values",
 					"objectClass": "System",
 					"sid": 243118602602369,
@@ -693,6 +800,56 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
+					"sid": 465213865048901,
+					"parameters": {
+						"object": "SecretBase"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "SecretBase",
+					"sid": 515196596855139,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 262709996352133,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 666362109711865,
+					"parameters": {
+						"object": "WheatFarm"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "WheatFarm",
+					"sid": 753617346393215,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 945443788529983,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
 					"sid": 242333576724944,
 					"parameters": {
 						"object": "mainFarmBldg"
@@ -765,6 +922,56 @@
 				}
 			],
 			"sid": 962048247662365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 976763373695058,
+					"parameters": {
+						"object": "SecretBase"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "SecretBase",
+					"sid": 272013211579120,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 859758093211655
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 628134427921594,
+					"parameters": {
+						"object": "WheatFarm"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "WheatFarm",
+					"sid": 820701653188684,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 747922709448827
 		},
 		{
 			"eventType": "script",

@@ -284,7 +284,17 @@
 			"Sprite9",
 			"TextInput",
 			"CloseBtn",
-			"CreditsCloseBtn"
+			"CreditsCloseBtn",
+			"SecretBase",
+			"Avatar",
+			"SecretBaseCloseBtn",
+			"farmToolIconsCalciumtrice",
+			"Tilemap3",
+			"farmToolIconsCalciumtrice2",
+			"Scythe",
+			"WheatFarm",
+			"HelpText",
+			"HelpTextBg"
 		],
 		"subfolders": [
 			{
@@ -459,7 +469,8 @@
 			"DesertRoom1",
 			"Objects",
 			"ShipMenu",
-			"Credits"
+			"Credits",
+			"SecretBase"
 		],
 		"subfolders": []
 	},
@@ -478,7 +489,8 @@
 			"eLevelObjects",
 			"eMusic",
 			"eShipMenu",
-			"eCredits"
+			"eCredits",
+			"eSecretBase"
 		],
 		"subfolders": []
 	},

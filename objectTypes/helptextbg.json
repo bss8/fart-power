@@ -1,0 +1,37 @@
+{
+	"name": "HelpTextBg",
+	"plugin-id": "Sprite",
+	"sid": 568554014357167,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 154,
+						"height": 93,
+						"originX": 0.4675324675324675,
+						"originY": 0.5161290322580645,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9968028,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 833518526721931,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
