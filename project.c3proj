@@ -525,6 +525,16 @@
 					"name": "Collectible_2.webm",
 					"type": "video/webm",
 					"sid": 976150464843352
+				},
+				{
+					"name": "Cafofo - MUSIC - Cheesy Blues.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 773769264889312
+				},
+				{
+					"name": "Mug Stage.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 230819362489553
 				}
 			],
 			"subfolders": []

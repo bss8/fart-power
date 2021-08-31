@@ -12,6 +12,26 @@
 			"sid": 286547152092418
 		},
 		{
+			"eventType": "variable",
+			"name": "CameraZone_X",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 856132168621281
+		},
+		{
+			"eventType": "variable",
+			"name": "CameraZone_Y",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 268737911684297
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Camera",
@@ -71,6 +91,28 @@
 						}
 					],
 					"sid": 240258548093581
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-end-of-layout",
+							"objectClass": "System",
+							"sid": 866694174945443
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 679842600018553,
+							"parameters": {
+								"x": "0",
+								"y": "0"
+							}
+						}
+					],
+					"sid": 344271372582553
 				}
 			],
 			"sid": 568379038427983

@@ -82,11 +82,14 @@
 			],
 			"actions": [
 				{
-					"id": "set-opacity",
-					"objectClass": "NightDayCycleSprite",
-					"sid": 250662036155600,
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 969517527950984,
 					"parameters": {
-						"opacity": "0"
+						"audio-file": "Cafofo - MUSIC - Cheesy Blues",
+						"loop": "not-looping",
+						"volume": "-33",
+						"tag-optional": "\"MainTheme\""
 					}
 				}
 			],
@@ -458,6 +461,17 @@
 					"parameters": {
 						"layout": "DesertRoom1"
 					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 935538296771053,
+					"parameters": {
+						"tag": "\"MainTheme\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
+					}
 				}
 			],
 			"sid": 438289486607070
@@ -540,11 +554,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 361272953562803,
+					"sid": 424647373199762,
 					"parameters": {
 						"audio-file": "Menu_Move",
 						"loop": "not-looping",
-						"volume": "20",
+						"volume": "0",
 						"tag-optional": "\"\""
 					}
 				},

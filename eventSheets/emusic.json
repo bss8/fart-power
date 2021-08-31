@@ -31,18 +31,42 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 716485181382177,
+							"sid": 832697834029446,
 							"parameters": {
 								"audio-file": "Bio_UnitMetre_-_03_-_SciFi",
 								"loop": "not-looping",
-								"volume": "-10",
-								"tag-optional": "\"\""
+								"volume": "-17",
+								"tag-optional": "\"Lvl1_Platformer_Music\""
 							}
 						}
 					],
 					"sid": 846547666713192
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 335962200369367
+				}
+			],
+			"actions": [
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 698989719019507,
+					"parameters": {
+						"tag": "\"Lvl1_Platformer_Music\"",
+						"db": "-100",
+						"duration": "2",
+						"ending": "stop"
+					}
+				}
+			],
+			"sid": 696436254882627
 		}
 	],
 	"sid": 724629803805295
