@@ -82,6 +82,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 525317260264823,
+					"parameters": {
+						"width": "854 ",
+						"height": "480"
+					}
+				},
+				{
 					"id": "play",
 					"objectClass": "Audio",
 					"sid": 969517527950984,
@@ -577,6 +586,14 @@
 						"x": "85.123373",
 						"y": "73.227537",
 						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "HelpText",
+					"sid": 926655599889180,
+					"parameters": {
+						"text": "\"WOAH! *spits tobacca on the ground* \nYou found muh old scythe! You know what this means pardner? I suppose we can be farmin' now!\""
 					}
 				}
 			],

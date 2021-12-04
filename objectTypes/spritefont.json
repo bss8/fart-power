@@ -1,25 +1,20 @@
 {
 	"name": "SpriteFont",
 	"plugin-id": "Spritefont2",
-	"sid": 985962848703455,
+	"sid": 652709421895123,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "replacecolor",
-			"name": "ReplaceColor"
-		}
-	],
+	"effectTypes": [],
 	"image": {
 		"width": 128,
-		"height": 40,
+		"height": 256,
 		"originX": 0.5,
 		"originY": 0.5,
-		"originalSource": "C:\\Users\\Matthew Gruber\\Dropbox\\Idiovox\\Projects\\Bumper's Quest\\Graphics\\GUI_HUD_Fonts_Logos\\Font.png",
+		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 5692643,
+		"imageSpriteId": 9137626,
 		"useCollisionPoly": true
 	}
 }

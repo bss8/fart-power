@@ -727,6 +727,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -4930,6 +4931,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -4982,9 +4984,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 188.8051948051948,
-						"y": 359.9296187683285,
+						"y": 348.31671554252205,
 						"width": 314,
-						"height": 131.3374545454545,
+						"height": 155.3374545454545,
 						"originX": 0.4675324675324675,
 						"originY": 0.5161290322580645,
 						"color": [
@@ -5019,6 +5021,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -5118,7 +5121,7 @@
 				{
 					"type": "HelpText",
 					"properties": {
-						"text": ">> Help text will appear here!  <<",
+						"text": "Howdy pardner! I'm Cody. I'll give you some helpful hints here if you click around. It'll be night soon, and scary, so don't dilly dally. Good luck out there!",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 14,
@@ -5142,9 +5145,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 52,
-						"y": 303.909090909091,
+						"y": 276.909090909091,
 						"width": 297.75688106539,
-						"height": 107.27197201384217,
+						"height": 134.27197201384217,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -5179,6 +5182,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -5228,7 +5232,7 @@
 							1,
 							1,
 							1,
-							1
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -5256,6 +5260,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -5270,5 +5275,6 @@
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
+	"projection": "perspective",
 	"eventSheet": "eMainGameScreen"
 }

@@ -363,6 +363,17 @@
 							"parameters": {
 								"layout": "MainGameScreen"
 							}
+						},
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 627015344521226,
+							"parameters": {
+								"tag": "\"Lvl1_End_Music\"",
+								"db": "-100",
+								"duration": "3",
+								"ending": "stop"
+							}
 						}
 					],
 					"sid": 171210463228139

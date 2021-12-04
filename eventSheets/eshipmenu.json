@@ -20,6 +20,16 @@
 					"parameters": {
 						"object": "SpriteCloseBtn"
 					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 287579390745435,
+					"parameters": {
+						"first-value": "SpriteCloseBtn.UID",
+						"comparison": 0,
+						"second-value": "224"
+					}
 				}
 			],
 			"actions": [
@@ -29,6 +39,17 @@
 					"sid": 800371992240750,
 					"parameters": {
 						"layout": "MainGameScreen"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 800511118684821,
+					"parameters": {
+						"audio-file": "Menu_Move",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],

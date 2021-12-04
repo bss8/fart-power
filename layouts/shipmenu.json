@@ -125,6 +125,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -187,72 +188,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "SpriteCloseBtn",
-					"properties": {
-						"text": "X",
-						"enable-bbcode": false,
-						"character-width": 8,
-						"character-height": 10,
-						"character-set": " !\"  /&'()*+,-./0123456789:;<=>?ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]    ",
-						"spacing-data": "",
-						"scale": 2,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 224,
-					"instanceVariables": {
-						"Type": "Menu_TitleScreen",
-						"Index": 1
-					},
-					"behaviors": {},
-					"effects": {
-						"Brightness": {
-							"parameters": {
-								"brightness": 1
-							}
-						},
-						"ReplaceColor": {
-							"parameters": {
-								"source-color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"replace-color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"tolerance": 0.01
-							}
-						}
-					},
-					"world": {
-						"x": 779,
-						"y": 8,
-						"width": 69,
-						"height": 28,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0,
-						"blendMode": "additive"
-					}
 				}
 			],
 			"sid": 145108553417557,
@@ -276,6 +211,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -340,6 +276,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -501,6 +438,72 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "SpriteCloseBtn",
+					"properties": {
+						"text": "X",
+						"enable-bbcode": false,
+						"character-width": 8,
+						"character-height": 10,
+						"character-set": " !\"  /&'()*+,-./0123456789:;<=>?ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]    ",
+						"spacing-data": "",
+						"scale": 2,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 224,
+					"instanceVariables": {
+						"Type": "Menu_TitleScreen",
+						"Index": 1
+					},
+					"behaviors": {},
+					"effects": {
+						"Brightness": {
+							"parameters": {
+								"brightness": 1
+							}
+						},
+						"ReplaceColor": {
+							"parameters": {
+								"source-color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"replace-color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"tolerance": 0.01
+							}
+						}
+					},
+					"world": {
+						"x": 779,
+						"y": 8,
+						"width": 69,
+						"height": 28,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "additive"
+					}
 				}
 			],
 			"sid": 310688980599826,
@@ -524,6 +527,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
+			"drawOrder": "z-order",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -538,5 +542,6 @@
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
-	"eventSheet": "eFarmMenu"
+	"projection": "perspective",
+	"eventSheet": "eShipMenu"
 }
