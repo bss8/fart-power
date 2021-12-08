@@ -288,7 +288,6 @@
 			"ShipBlueBg",
 			"Sprite7",
 			"9patch",
-			"Sprite9",
 			"TextInput",
 			"CloseBtn",
 			"CreditsCloseBtn",
@@ -354,7 +353,6 @@
 					"chicken2",
 					"cow2",
 					"pig2",
-					"StaticChickenIcon",
 					"buyChickenBtn",
 					"IntroBtn",
 					"titleScreenFloor",
@@ -363,7 +361,11 @@
 					"Sprite",
 					"Sprite4",
 					"Sprite5",
-					"Sprite8"
+					"StaticPigIcon",
+					"StaticCowIcon",
+					"StaticChickenIcon",
+					"StaticSheepIcon",
+					"StaticLlamaIcon"
 				],
 				"subfolders": [],
 				"name": "HUD and Menus"
@@ -415,8 +417,7 @@
 					},
 					{
 						"items": [
-							"Ankh",
-							"Ankh2"
+							"Ankh"
 						],
 						"subfolders": [],
 						"name": "collectables"

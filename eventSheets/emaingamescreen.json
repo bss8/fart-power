@@ -63,6 +63,26 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "isAnkhCreated",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 688441916141582
+		},
+		{
+			"eventType": "variable",
+			"name": "hasAnkh",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "Does the player have the Ankh?",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 331177658561849
+		},
+		{
+			"eventType": "variable",
 			"name": "hasScythe",
 			"type": "boolean",
 			"initialValue": "false",
@@ -404,6 +424,28 @@
 					"parameters": {
 						"layout": "FarmMenu"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 351092784991525,
+					"parameters": {
+						"audio-file": "Menu_Move",
+						"loop": "not-looping",
+						"volume": "20",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 720682323098026,
+					"parameters": {
+						"tag": "\"MainTheme\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
+					}
 				}
 			],
 			"sid": 392516654438063
@@ -437,6 +479,28 @@
 					"parameters": {
 						"layout": "ShipMenu"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 234499418961718,
+					"parameters": {
+						"audio-file": "Menu_Move",
+						"loop": "not-looping",
+						"volume": "20",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 228900235703538,
+					"parameters": {
+						"tag": "\"MainTheme\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
+					}
 				}
 			],
 			"sid": 573151689882908
@@ -469,6 +533,17 @@
 					"sid": 489876500947089,
 					"parameters": {
 						"layout": "DesertRoom1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 716758599436592,
+					"parameters": {
+						"audio-file": "Menu_Move",
+						"loop": "not-looping",
+						"volume": "20",
+						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -524,6 +599,17 @@
 						"loop": "not-looping",
 						"volume": "20",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 583584932091098,
+					"parameters": {
+						"tag": "\"MainTheme\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
 					}
 				}
 			],
@@ -1136,6 +1222,60 @@
 				}
 			],
 			"sid": 747922709448827
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 745332515154583,
+					"parameters": {
+						"variable": "hasAnkh"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 515248690740238,
+					"parameters": {
+						"variable": "isAnkhCreated"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 810812187582776,
+					"parameters": {
+						"object-to-create": "Ankh",
+						"layer": "3",
+						"x": "24",
+						"y": "190",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 701627790244397,
+					"parameters": {
+						"variable": "isAnkhCreated",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "HelpText",
+					"sid": 812494248538528,
+					"parameters": {
+						"text": "\"Bah gally you found an ANKH!! Wherever did you get it? Never mind all that - this is a key to many secrets 'round these parts. Keep it secret, keep it safe. Never know when you may've a need for it.\""
+					}
+				}
+			],
+			"sid": 509569286361036
 		},
 		{
 			"eventType": "script",

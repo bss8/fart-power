@@ -89,6 +89,15 @@
 										"key": "\"Beetles\"",
 										"value": "clamp(Self.Get(\"Beetles\") + 1,0,99)"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 433676750076224,
+									"parameters": {
+										"variable": "hasAnkh",
+										"value": "true"
+									}
 								}
 							],
 							"sid": 764548386476381

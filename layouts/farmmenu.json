@@ -163,35 +163,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "StaticChickenIcon",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "static",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 16,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 119,
-						"y": 262,
-						"width": 62,
-						"height": 59,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "SpriteCloseBtn",
 					"properties": {
 						"text": "ENERGY PROTOTYPE SELECTOR 19.07.33 MK-II",
@@ -255,64 +226,6 @@
 						"angle": 0,
 						"zElevation": 0,
 						"blendMode": "additive"
-					}
-				},
-				{
-					"type": "Sprite8",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 206,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 124,
-						"y": 328,
-						"width": 70,
-						"height": 44,
-						"originX": 0.5857142857142857,
-						"originY": 0.4318181818181818,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite9",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 207,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 119,
-						"y": 397,
-						"width": 51,
-						"height": 40,
-						"originX": 0.45098039215686275,
-						"originY": 0.525,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
 					}
 				},
 				{

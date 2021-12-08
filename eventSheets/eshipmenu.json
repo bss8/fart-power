@@ -54,6 +54,316 @@
 				}
 			],
 			"sid": 800593538135833
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 246184862906855,
+					"parameters": {
+						"object": "StaticChickenIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticChickenIcon",
+					"sid": 356701258494875,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "StaticChickenIcon",
+					"sid": 345151768239702,
+					"parameters": {
+						"effect": "\"Brightness\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				}
+			],
+			"sid": 811967915767530,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 440962087095907,
+					"parameters": {
+						"object": "StaticChickenIcon"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticChickenIcon",
+					"sid": 750190712907906,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 162263700807190
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 629134150829110,
+					"parameters": {
+						"object": "StaticSheepIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticSheepIcon",
+					"sid": 217353531166808,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "StaticSheepIcon",
+					"sid": 117676608402284,
+					"parameters": {
+						"effect": "\"Brightness\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				}
+			],
+			"sid": 378772096751415,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 583768263274503,
+					"parameters": {
+						"object": "StaticSheepIcon"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticSheepIcon",
+					"sid": 427656195584535,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 442014638819417
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 436978719698545,
+					"parameters": {
+						"object": "StaticLlamaIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticLlamaIcon",
+					"sid": 505204876270500,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "StaticLlamaIcon",
+					"sid": 219293298698621,
+					"parameters": {
+						"effect": "\"Brightness\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				}
+			],
+			"sid": 915748456241665,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 589266049752783,
+					"parameters": {
+						"object": "StaticLlamaIcon"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticLlamaIcon",
+					"sid": 967318004385033,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 208117240420574
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 267954809679711,
+					"parameters": {
+						"object": "StaticCowIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticCowIcon",
+					"sid": 920153400893015,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "StaticCowIcon",
+					"sid": 756608677349360,
+					"parameters": {
+						"effect": "\"Brightness\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				}
+			],
+			"sid": 795856012889587,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 650374390037773,
+					"parameters": {
+						"object": "StaticCowIcon"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticCowIcon",
+					"sid": 651659560363900,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 986677752599644
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 930452181413222,
+					"parameters": {
+						"object": "StaticPigIcon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticPigIcon",
+					"sid": 676624059142324,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "StaticPigIcon",
+					"sid": 448015812854604,
+					"parameters": {
+						"effect": "\"Brightness\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				}
+			],
+			"sid": 493716793881313,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 153626278768147,
+					"parameters": {
+						"object": "StaticPigIcon"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StaticPigIcon",
+					"sid": 369040680459415,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 390826276558403
 		}
 	],
 	"sid": 732218805529434
